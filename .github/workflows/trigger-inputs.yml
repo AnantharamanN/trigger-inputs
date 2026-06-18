@@ -38,7 +38,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Print workflow inputs
-            - run: |
+              run: |
                 echo "Run tests: ${{ inputs.run-tests }}"
                 echo "Test type: ${{ inputs.test-type }}"
                 echo "Environment: ${{ inputs.environment }}"
@@ -47,4 +47,4 @@ jobs:
 
             - name: Run tests (if selected)
               if: ${{ inputs.run-tests == true }}
-            - run: echo "Testing ..."
+              run: echo "Testing ..."
