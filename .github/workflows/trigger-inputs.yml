@@ -1,7 +1,7 @@
 name: Triggered workflow with various inputs
 
 on:
-    workflow-dispatch:
+    workflow_dispatch:
         inputs:
             run-tests:
                 description: "Run tests"
